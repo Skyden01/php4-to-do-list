@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS todo_db_miguel CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE todo_db_miguel;
+
+CREATE TABLE if NOT EXISTS tasks(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    completed TINYINT(1) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
